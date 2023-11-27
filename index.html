@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-    <title>Random User API</title>
-  </head>
-  <header>
-    <h1>
-      Random User
-      <span> From <a href="https://randomuser.me">randomuser.me</a> </span>
-    </h1>
-  </header>
+    <title>Trivia Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Trivia Quiz
+            <span> From Open Trivia Database </span>
+        </h1>
+    </header>
 
-  <main>
-    <section class="people"></section>
-    <section style="display: none" class="error"></section>
-  </main>
+    <main>
+        <form id="trivia-form">
+            <label for="category-select">Choose a category:</label>
+            <select id="category-select">
+              
+            </select>
+            <button type="submit">Get Questions</button>
+        </form>
+        <section id="questions-container"></section>
+    </main>
+</body>
 </html>
